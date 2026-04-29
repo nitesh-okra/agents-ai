@@ -14,7 +14,7 @@ async function main() {
   const dbUrl =
     process.env.DATABASE_URL?.trim()
     || config.databaseUrl
-    || `postgres://paperclip:paperclip@127.0.0.1:${config.embeddedPostgresPort}/paperclip`;
+    || `postgres://Agents:Agents@127.0.0.1:${config.embeddedPostgresPort}/Agents`;
 
   const db = createDb(dbUrl);
   const refs = issueReferenceService(db);

@@ -2,19 +2,19 @@
  * Shared attachment content-type configuration.
  *
  * By default a curated set of image/document/text types are allowed. Set the
- * `PAPERCLIP_ALLOWED_ATTACHMENT_TYPES` environment variable to a
+ * `Agents_ALLOWED_ATTACHMENT_TYPES` environment variable to a
  * comma-separated list of MIME types or wildcard patterns to expand the
  * allowed set for routes that use this allowlist.
  *
  * Examples:
- *   PAPERCLIP_ALLOWED_ATTACHMENT_TYPES=image/*,application/pdf
- *   PAPERCLIP_ALLOWED_ATTACHMENT_TYPES=image/*,application/pdf,text/*
+ *   Agents_ALLOWED_ATTACHMENT_TYPES=image/*,application/pdf
+ *   Agents_ALLOWED_ATTACHMENT_TYPES=image/*,application/pdf,text/*
  *
  * Supported pattern syntax:
  *   - Exact types:   "application/pdf"
  *   - Wildcards:     "image/*"  or  "application/vnd.openxmlformats-officedocument.*"
  */
-import { MAX_COMPANY_ATTACHMENT_MAX_BYTES } from "@paperclipai/shared";
+import { MAX_COMPANY_ATTACHMENT_MAX_BYTES } from "@Agentsai/shared";
 
 export const DEFAULT_ALLOWED_TYPES: readonly string[] = [
   "image/png",
@@ -83,7 +83,7 @@ export function isInlineAttachmentContentType(contentType: string): boolean {
 // ---------- Module-level singletons read once at startup ----------
 
 const allowedPatterns: string[] = parseAllowedTypes(
-  process.env.PAPERCLIP_ALLOWED_ATTACHMENT_TYPES,
+  process.env.Agents_ALLOWED_ATTACHMENT_TYPES,
 );
 
 /** Convenience wrapper using the process-level allowed list. */
@@ -92,7 +92,7 @@ export function isAllowedContentType(contentType: string): boolean {
 }
 
 export const MAX_ATTACHMENT_BYTES =
-  Number(process.env.PAPERCLIP_ATTACHMENT_MAX_BYTES) || 10 * 1024 * 1024;
+  Number(process.env.Agents_ATTACHMENT_MAX_BYTES) || 10 * 1024 * 1024;
 
 export function normalizeIssueAttachmentMaxBytes(value: number | null | undefined): number {
   if (typeof value !== "number" || !Number.isFinite(value) || value <= 0) {

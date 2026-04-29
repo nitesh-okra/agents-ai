@@ -1,16 +1,16 @@
-import type { PaperclipPluginManifestV1 } from "@paperclipai/plugin-sdk";
+import type { AgentsPluginManifestV1 } from "@Agentsai/plugin-sdk";
 
-const PLUGIN_ID = "paperclip.e2b-sandbox-provider";
+const PLUGIN_ID = "Agents.e2b-sandbox-provider";
 const PLUGIN_VERSION = "0.1.0";
 
-const manifest: PaperclipPluginManifestV1 = {
+const manifest: AgentsPluginManifestV1 = {
   id: PLUGIN_ID,
   apiVersion: 1,
   version: PLUGIN_VERSION,
   displayName: "E2B Sandbox Provider",
   description:
-    "First-party sandbox provider plugin that provisions E2B cloud sandboxes as Paperclip execution environments.",
-  author: "Paperclip",
+    "First-party sandbox provider plugin that provisions E2B cloud sandboxes as Agents execution environments.",
+  author: "Agents",
   categories: ["automation"],
   capabilities: ["environment.drivers.register"],
   entrypoints: {
@@ -35,7 +35,7 @@ const manifest: PaperclipPluginManifestV1 = {
             type: "string",
             format: "secret-ref",
             description:
-              "Paperclip secret reference for the E2B API key. Falls back to E2B_API_KEY if omitted.",
+              "Agents secret reference for the E2B API key. Falls back to E2B_API_KEY if omitted.",
           },
           timeoutMs: {
             type: "number",

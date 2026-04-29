@@ -1,6 +1,6 @@
 import { and, eq, gte, sql } from "drizzle-orm";
-import type { Db } from "@paperclipai/db";
-import { agents, approvals, companies, costEvents, heartbeatRuns, issues } from "@paperclipai/db";
+import type { Db } from "@Agentsai/db";
+import { agents, approvals, companies, costEvents, heartbeatRuns, issues } from "@Agentsai/db";
 import { notFound } from "../errors.js";
 import { budgetService } from "./budgets.js";
 

@@ -9,12 +9,12 @@ import {
   heartbeatRuns,
   issueComments,
   issues,
-} from "@paperclipai/db";
+} from "@Agentsai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,
 } from "./helpers/embedded-postgres.js";
-import { MAX_ISSUE_REQUEST_DEPTH } from "@paperclipai/shared";
+import { MAX_ISSUE_REQUEST_DEPTH } from "@Agentsai/shared";
 import {
   DEFAULT_PRODUCTIVITY_REVIEW_NO_COMMENT_STREAK_RUNS,
   PRODUCTIVITY_REVIEW_ORIGIN_KIND,
@@ -35,7 +35,7 @@ describeEmbeddedPostgres("productivity review service", () => {
   let db: ReturnType<typeof createDb>;
 
   beforeAll(async () => {
-    tempDb = await startEmbeddedPostgresTestDatabase("paperclip-productivity-review-");
+    tempDb = await startEmbeddedPostgresTestDatabase("Agents-productivity-review-");
     db = createDb(tempDb.connectionString);
   }, 30_000);
 

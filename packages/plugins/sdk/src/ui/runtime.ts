@@ -6,16 +6,16 @@ type PluginBridgeRegistry = {
 };
 
 type GlobalBridge = typeof globalThis & {
-  __paperclipPluginBridge__?: PluginBridgeRegistry;
+  __AgentsPluginBridge__?: PluginBridgeRegistry;
 };
 
 function getBridgeRegistry(): PluginBridgeRegistry | undefined {
-  return (globalThis as GlobalBridge).__paperclipPluginBridge__;
+  return (globalThis as GlobalBridge).__AgentsPluginBridge__;
 }
 
 function missingBridgeValueError(name: string): Error {
   return new Error(
-    `Paperclip plugin UI runtime is not initialized for "${name}". ` +
+    `Agents plugin UI runtime is not initialized for "${name}". ` +
       'Ensure the host loaded the plugin bridge before rendering this UI module.',
   );
 }
@@ -47,5 +47,5 @@ export function renderSdkUiComponent<TProps>(
     return component(props);
   }
 
-  throw new Error(`Paperclip plugin UI component "${name}" is not callable`);
+  throw new Error(`Agents plugin UI component "${name}" is not callable`);
 }

@@ -1,16 +1,16 @@
-import type { PaperclipPluginManifestV1 } from "@paperclipai/plugin-sdk";
+import type { AgentsPluginManifestV1 } from "@Agentsai/plugin-sdk";
 
-const PLUGIN_ID = "paperclip.fake-sandbox-provider";
+const PLUGIN_ID = "Agents.fake-sandbox-provider";
 const PLUGIN_VERSION = "0.1.0";
 
-const manifest: PaperclipPluginManifestV1 = {
+const manifest: AgentsPluginManifestV1 = {
   id: PLUGIN_ID,
   apiVersion: 1,
   version: PLUGIN_VERSION,
   displayName: "Fake Sandbox Provider",
   description:
-    "First-party deterministic sandbox provider plugin for exercising Paperclip provider-plugin integration without external infrastructure.",
-  author: "Paperclip",
+    "First-party deterministic sandbox provider plugin for exercising Agents provider-plugin integration without external infrastructure.",
+  author: "Agents",
   categories: ["automation"],
   capabilities: ["environment.drivers.register"],
   entrypoints: {
