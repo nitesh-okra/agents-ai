@@ -6,7 +6,7 @@ import {
   type Environment,
   type EnvironmentProbeResult,
   type JsonSchema,
-} from "@paperclipai/shared";
+} from "@Agentsai/shared";
 import { useCompany } from "../context/CompanyContext";
 import { useBreadcrumbs } from "../context/BreadcrumbContext";
 import { useToast } from "../context/ToastContext";

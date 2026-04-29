@@ -10,7 +10,7 @@ import {
   buildProjectMentionHref,
   buildSkillMentionHref,
   buildUserMentionHref,
-} from "@paperclipai/shared";
+} from "@Agentsai/shared";
 import { ThemeProvider } from "../context/ThemeContext";
 import { MarkdownBody } from "./MarkdownBody";
 import { queryKeys } from "../lib/queryKeys";

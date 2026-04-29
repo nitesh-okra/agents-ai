@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { Issue, Agent } from "@paperclipai/shared";
+import type { Issue, Agent } from "@Agentsai/shared";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Link } from "@/lib/router";
 import { accessApi, type CurrentBoardAccess } from "../api/access";

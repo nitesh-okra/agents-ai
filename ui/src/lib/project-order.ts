@@ -1,4 +1,4 @@
-import type { Project } from "@paperclipai/shared";
+import type { Project } from "@Agentsai/shared";
 
 export const PROJECT_ORDER_UPDATED_EVENT = "Agents:project-order-updated";
 const PROJECT_ORDER_STORAGE_PREFIX = "Agents.projectOrder";

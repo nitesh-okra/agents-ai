@@ -36,7 +36,7 @@ import type {
   IssueAttachment,
   IssueBlockerAttention,
   IssueRelationIssueSummary,
-} from "@paperclipai/shared";
+} from "@Agentsai/shared";
 import type { ActiveRunForIssue, LiveRunForIssue } from "../api/heartbeats";
 import { useLiveRunTranscripts } from "./transcript/useLiveRunTranscripts";
 import { useAgentsIssueRuntime, type AgentsIssueRuntimeReassignment } from "../hooks/useAgentsIssueRuntime";
