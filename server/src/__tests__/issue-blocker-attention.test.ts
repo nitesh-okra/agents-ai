@@ -9,7 +9,7 @@ import {
   heartbeatRuns,
   issueRelations,
   issues,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

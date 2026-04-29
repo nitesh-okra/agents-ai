@@ -15,7 +15,7 @@ import {
   issueExecutionDecisions,
   issueReadStates,
   issues,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

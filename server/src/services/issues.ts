@@ -1,6 +1,6 @@
 import { Buffer } from "node:buffer";
 import { and, asc, desc, eq, gt, inArray, isNull, lt, ne, notInArray, or, sql } from "drizzle-orm";
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import {
   activityLog,
   agentWakeupRequests,
@@ -26,14 +26,14 @@ import {
   labels,
   projectWorkspaces,
   projects,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import type {
   IssueBlockerAttention,
   IssueProductivityReview,
   IssueProductivityReviewTrigger,
   IssueRelationIssueSummary,
-} from "@Agentsai/shared";
-import { clampIssueRequestDepth, extractAgentMentionIds, extractProjectMentionIds, isUuidLike } from "@Agentsai/shared";
+} from "@paperclipai/shared";
+import { clampIssueRequestDepth, extractAgentMentionIds, extractProjectMentionIds, isUuidLike } from "@paperclipai/shared";
 import { conflict, notFound, unprocessable } from "../errors.js";
 import {
   defaultIssueExecutionWorkspaceSettingsForProject,

@@ -65,7 +65,7 @@ function createBootstrapInvite() {
     pnpmCommand,
     [
       "--filter",
-      "@Agentsai/db",
+      "@paperclipai/db",
       "exec",
       "tsx",
       BOOTSTRAP_SCRIPT_PATH,

@@ -11,7 +11,7 @@ import {
   heartbeatRuns,
   issueComments,
   issues,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import { heartbeatService } from "../services/heartbeat.ts";
 import { startEmbeddedPostgresTestDatabase } from "./helpers/embedded-postgres.ts";
 

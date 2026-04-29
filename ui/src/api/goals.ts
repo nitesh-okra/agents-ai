@@ -1,4 +1,4 @@
-import type { Goal } from "@Agentsai/shared";
+import type { Goal } from "@paperclipai/shared";
 import { api } from "./client";
 
 export const goalsApi = {

@@ -91,8 +91,8 @@ import {
   type AgentRuntimeState,
   type LiveEvent,
   type WorkspaceOperation,
-} from "@Agentsai/shared";
-import { redactHomePathUserSegments, redactHomePathUserSegmentsInValue } from "@Agentsai/adapter-utils";
+} from "@paperclipai/shared";
+import { redactHomePathUserSegments, redactHomePathUserSegmentsInValue } from "@paperclipai/adapter-utils";
 import { agentRouteRef } from "../lib/utils";
 import {
   applyAgentSkillSnapshot,

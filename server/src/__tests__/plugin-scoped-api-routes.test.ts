@@ -1,7 +1,7 @@
 import express from "express";
 import request from "supertest";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { pluginManifestV1Schema, type AgentsPluginManifestV1 } from "@Agentsai/shared";
+import { pluginManifestV1Schema, type AgentsPluginManifestV1 } from "@paperclipai/shared";
 
 const mockRegistry = vi.hoisted(() => ({
   getById: vi.fn(),

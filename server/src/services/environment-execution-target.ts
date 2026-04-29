@@ -1,9 +1,9 @@
-import type { Db } from "@Agentsai/db";
-import type { Environment, EnvironmentLease } from "@Agentsai/shared";
+import type { Db } from "@paperclipai/db";
+import type { Environment, EnvironmentLease } from "@paperclipai/shared";
 import {
   adapterExecutionTargetToRemoteSpec,
   type AdapterExecutionTarget,
-} from "@Agentsai/adapter-utils/execution-target";
+} from "@paperclipai/adapter-utils/execution-target";
 import { parseObject } from "../adapters/utils.js";
 import { resolveEnvironmentDriverConfigForRuntime } from "./environment-config.js";
 import type { EnvironmentRuntimeService } from "./environment-runtime.js";

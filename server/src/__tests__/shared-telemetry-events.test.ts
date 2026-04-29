@@ -4,8 +4,8 @@ import {
   trackAgentFirstHeartbeat,
   trackAgentTaskCompleted,
   trackInstallCompleted,
-} from "@Agentsai/shared/telemetry";
-import type { TelemetryClient } from "@Agentsai/shared/telemetry";
+} from "@paperclipai/shared/telemetry";
+import type { TelemetryClient } from "@paperclipai/shared/telemetry";
 
 function createClient(): TelemetryClient {
   return {

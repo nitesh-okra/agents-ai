@@ -3,7 +3,7 @@ import { promises as fs } from "node:fs";
 import { execFile } from "node:child_process";
 import path from "node:path";
 import { promisify } from "node:util";
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import type {
   CompanyPortabilityAgentManifestEntry,
   CompanyPortabilityCollisionStrategy,
@@ -29,7 +29,7 @@ import type {
   CompanySkill,
   AgentEnvConfig,
   RoutineVariable,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import {
   AGENT_DEFAULT_MAX_CONCURRENT_RUNS,
   ISSUE_PRIORITIES,
@@ -43,12 +43,12 @@ import {
   deriveProjectUrlKey,
   envConfigSchema,
   normalizeAgentUrlKey,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import {
   readAgentsSkillSyncPreference,
   writeAgentsSkillSyncPreference,
-} from "@Agentsai/adapter-utils/server-utils";
-import { ensureOpenCodeModelConfiguredAndAvailable } from "@Agentsai/adapter-opencode-local/server";
+} from "@paperclipai/adapter-utils/server-utils";
+import { ensureOpenCodeModelConfiguredAndAvailable } from "@paperclipai/adapter-opencode-local/server";
 import { findServerAdapter } from "../adapters/index.js";
 import { forbidden, notFound, unprocessable } from "../errors.js";
 import { ghFetch, gitHubApiBase, resolveRawGitHubUrl } from "./github-fetch.js";

@@ -22,7 +22,7 @@ import {
   issueTreeHoldMembers,
   issueTreeHolds,
   issues,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,
@@ -46,9 +46,9 @@ vi.mock("../telemetry.ts", () => ({
   getTelemetryClient: () => mockTelemetryClient,
 }));
 
-vi.mock("@Agentsai/shared/telemetry", async () => {
-  const actual = await vi.importActual<typeof import("@Agentsai/shared/telemetry")>(
-    "@Agentsai/shared/telemetry",
+vi.mock("@paperclipai/shared/telemetry", async () => {
+  const actual = await vi.importActual<typeof import("@paperclipai/shared/telemetry")>(
+    "@paperclipai/shared/telemetry",
   );
   return {
     ...actual,

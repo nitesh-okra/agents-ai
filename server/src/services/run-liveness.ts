@@ -1,4 +1,4 @@
-import type { HeartbeatRunStatus, IssueStatus, RunLivenessState } from "@Agentsai/shared";
+import type { HeartbeatRunStatus, IssueStatus, RunLivenessState } from "@paperclipai/shared";
 
 export type RunLivenessActionability =
   | "runnable"

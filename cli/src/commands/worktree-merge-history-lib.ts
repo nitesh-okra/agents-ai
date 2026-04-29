@@ -9,7 +9,7 @@ import {
   issues,
   projects,
   projectWorkspaces,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 
 type IssueRow = typeof issues.$inferSelect;
 type CommentRow = typeof issueComments.$inferSelect;

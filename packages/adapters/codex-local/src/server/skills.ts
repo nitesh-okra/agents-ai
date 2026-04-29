@@ -4,11 +4,11 @@ import type {
   AdapterSkillContext,
   AdapterSkillEntry,
   AdapterSkillSnapshot,
-} from "@Agentsai/adapter-utils";
+} from "@paperclipai/adapter-utils";
 import {
   readAgentsRuntimeSkillEntries,
   resolveAgentsDesiredSkillNames,
-} from "@Agentsai/adapter-utils/server-utils";
+} from "@paperclipai/adapter-utils/server-utils";
 
 const __moduleDir = path.dirname(fileURLToPath(import.meta.url));
 

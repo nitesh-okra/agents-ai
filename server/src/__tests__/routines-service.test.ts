@@ -19,7 +19,7 @@ import {
   routineRuns,
   routines,
   routineTriggers,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

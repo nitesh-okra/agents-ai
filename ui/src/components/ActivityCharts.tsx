@@ -1,4 +1,4 @@
-import type { DashboardRunActivityDay, HeartbeatRun } from "@Agentsai/shared";
+import type { DashboardRunActivityDay, HeartbeatRun } from "@paperclipai/shared";
 
 /* ---- Utilities ---- */
 

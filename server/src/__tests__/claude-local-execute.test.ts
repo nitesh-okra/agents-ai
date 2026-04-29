@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from "vitest";
 import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
-import { execute } from "@Agentsai/adapter-claude-local/server";
+import { execute } from "@paperclipai/adapter-claude-local/server";
 
 async function writeFailingClaudeCommand(
   commandPath: string,

@@ -25,7 +25,7 @@ import { fileURLToPath } from "node:url";
 import { Router } from "express";
 import type { Request, Response } from "express";
 import { and, desc, eq, gte } from "drizzle-orm";
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import {
   agents,
   companies,
@@ -33,17 +33,17 @@ import {
   pluginLogs,
   pluginWebhookDeliveries,
   projects,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import type {
   PluginApiRouteDeclaration,
   PluginStatus,
   AgentsPluginManifestV1,
   PluginBridgeErrorCode,
   PluginLauncherRenderContextSnapshot,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import {
   PLUGIN_STATUSES,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { pluginRegistryService } from "../services/plugin-registry.js";
 import { pluginLifecycleManager } from "../services/plugin-lifecycle.js";
 import { getPluginUiContributionMetadata, pluginLoader } from "../services/plugin-loader.js";
@@ -55,8 +55,8 @@ import type { PluginJobStore } from "../services/plugin-job-store.js";
 import type { PluginWorkerManager } from "../services/plugin-worker-manager.js";
 import type { PluginStreamBus } from "../services/plugin-stream-bus.js";
 import type { PluginToolDispatcher } from "../services/plugin-tool-dispatcher.js";
-import type { ToolRunContext } from "@Agentsai/plugin-sdk";
-import { JsonRpcCallError, PLUGIN_RPC_ERROR_CODES } from "@Agentsai/plugin-sdk";
+import type { ToolRunContext } from "@paperclipai/plugin-sdk";
+import { JsonRpcCallError, PLUGIN_RPC_ERROR_CODES } from "@paperclipai/plugin-sdk";
 import {
   assertAuthenticated,
   assertBoard,
@@ -142,7 +142,7 @@ const REPO_ROOT = path.resolve(__dirname, "../../..");
 
 const BUNDLED_PLUGIN_EXAMPLES: AvailablePluginExample[] = [
   {
-    packageName: "@Agentsai/plugin-hello-world-example",
+    packageName: "@paperclipai/plugin-hello-world-example",
     pluginKey: "Agents.hello-world-example",
     displayName: "Hello World Widget (Example)",
     description: "Reference UI plugin that adds a simple Hello World widget to the Agents dashboard.",
@@ -150,7 +150,7 @@ const BUNDLED_PLUGIN_EXAMPLES: AvailablePluginExample[] = [
     tag: "example",
   },
   {
-    packageName: "@Agentsai/plugin-file-browser-example",
+    packageName: "@paperclipai/plugin-file-browser-example",
     pluginKey: "Agents-file-browser-example",
     displayName: "File Browser (Example)",
     description: "Example plugin that adds a Files link in project navigation plus a project detail file browser.",
@@ -158,7 +158,7 @@ const BUNDLED_PLUGIN_EXAMPLES: AvailablePluginExample[] = [
     tag: "example",
   },
   {
-    packageName: "@Agentsai/plugin-kitchen-sink-example",
+    packageName: "@paperclipai/plugin-kitchen-sink-example",
     pluginKey: "Agents-kitchen-sink-example",
     displayName: "Kitchen Sink (Example)",
     description: "Reference plugin that demonstrates the current Agents plugin API surface, bridge flows, UI extension surfaces, jobs, webhooks, tools, streams, and trusted local workspace/process demos.",
@@ -166,7 +166,7 @@ const BUNDLED_PLUGIN_EXAMPLES: AvailablePluginExample[] = [
     tag: "example",
   },
   {
-    packageName: "@Agentsai/plugin-orchestration-smoke-example",
+    packageName: "@paperclipai/plugin-orchestration-smoke-example",
     pluginKey: "Agentsai.plugin-orchestration-smoke-example",
     displayName: "Orchestration Smoke (Example)",
     description: "Acceptance fixture for scoped plugin routes, restricted database namespaces, issue orchestration, documents, wakeups, summaries, and UI status surfaces.",

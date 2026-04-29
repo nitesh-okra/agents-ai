@@ -1,4 +1,4 @@
-import type { Issue } from "@Agentsai/shared";
+import type { Issue } from "@paperclipai/shared";
 
 type IssueDetailSource = "issues" | "inbox";
 

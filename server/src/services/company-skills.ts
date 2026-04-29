@@ -3,10 +3,10 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { and, asc, eq } from "drizzle-orm";
-import type { Db } from "@Agentsai/db";
-import { companies, companySkills } from "@Agentsai/db";
-import { readAgentsSkillSyncPreference } from "@Agentsai/adapter-utils/server-utils";
-import type { AgentsSkillEntry } from "@Agentsai/adapter-utils/server-utils";
+import type { Db } from "@paperclipai/db";
+import { companies, companySkills } from "@paperclipai/db";
+import { readAgentsSkillSyncPreference } from "@paperclipai/adapter-utils/server-utils";
+import type { AgentsSkillEntry } from "@paperclipai/adapter-utils/server-utils";
 import type {
   CompanySkill,
   CompanySkillCreateRequest,
@@ -25,8 +25,8 @@ import type {
   CompanySkillTrustLevel,
   CompanySkillUpdateStatus,
   CompanySkillUsageAgent,
-} from "@Agentsai/shared";
-import { normalizeAgentUrlKey } from "@Agentsai/shared";
+} from "@paperclipai/shared";
+import { normalizeAgentUrlKey } from "@paperclipai/shared";
 import { resolveAgentsInstanceRoot } from "../home-paths.js";
 import { notFound, unprocessable } from "../errors.js";
 import { ghFetch, gitHubApiBase, resolveRawGitHubUrl } from "./github-fetch.js";

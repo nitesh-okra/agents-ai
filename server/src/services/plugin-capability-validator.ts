@@ -24,7 +24,7 @@ import type {
   AgentsPluginManifestV1,
   PluginUiSlotType,
   PluginLauncherPlacementZone,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { forbidden } from "../errors.js";
 import { logger } from "../middleware/logger.js";
 

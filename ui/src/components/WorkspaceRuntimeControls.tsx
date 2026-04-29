@@ -2,11 +2,11 @@ import type {
   WorkspaceCommandDefinition,
   WorkspaceRuntimeControlTarget,
   WorkspaceRuntimeService,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import {
   listWorkspaceCommandDefinitions,
   matchWorkspaceRuntimeServiceToCommand,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { Activity, ExternalLink, Loader2, Play, RotateCcw, Square } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";

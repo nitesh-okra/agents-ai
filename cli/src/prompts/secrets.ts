@@ -1,5 +1,5 @@
 import * as p from "@clack/prompts";
-import type { SecretProvider } from "@Agentsai/shared";
+import type { SecretProvider } from "@paperclipai/shared";
 import type { SecretsConfig } from "../config/schema.js";
 import { resolveDefaultSecretsKeyFilePath, resolveAgentsInstanceId } from "../config/home.js";
 

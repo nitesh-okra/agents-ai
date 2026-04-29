@@ -1,4 +1,4 @@
-import type { IssueRelatedWorkItem, IssueRelatedWorkSummary } from "@Agentsai/shared";
+import type { IssueRelatedWorkItem, IssueRelatedWorkSummary } from "@paperclipai/shared";
 import { IssueReferencePill } from "./IssueReferencePill";
 
 type GroupedSource = {

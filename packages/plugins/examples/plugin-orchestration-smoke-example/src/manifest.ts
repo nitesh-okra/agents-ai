@@ -1,4 +1,4 @@
-import type { AgentsPluginManifestV1 } from "@Agentsai/plugin-sdk";
+import type { AgentsPluginManifestV1 } from "@paperclipai/plugin-sdk";
 
 const manifest: AgentsPluginManifestV1 = {
   id: "Agentsai.plugin-orchestration-smoke-example",

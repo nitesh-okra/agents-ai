@@ -11,8 +11,8 @@ import {
   issueComments,
   issueDocuments,
   issues,
-} from "@Agentsai/db";
-import { ISSUE_CONTINUATION_SUMMARY_DOCUMENT_KEY } from "@Agentsai/shared";
+} from "@paperclipai/db";
+import { ISSUE_CONTINUATION_SUMMARY_DOCUMENT_KEY } from "@paperclipai/shared";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

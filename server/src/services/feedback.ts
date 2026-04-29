@@ -1,7 +1,7 @@
 import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { and, asc, desc, eq, getTableColumns, gte, lte, ne, or } from "drizzle-orm";
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import {
   agents,
   companies,
@@ -17,11 +17,11 @@ import {
   issueComments,
   issueDocuments,
   issues,
-} from "@Agentsai/db";
-import { readAgentsSkillSyncPreference } from "@Agentsai/adapter-utils/server-utils";
-import { claudeConfigDir, parseClaudeStreamJson } from "@Agentsai/adapter-claude-local/server";
-import { codexHomeDir, parseCodexJsonl } from "@Agentsai/adapter-codex-local/server";
-import { parseOpenCodeJsonl } from "@Agentsai/adapter-opencode-local/server";
+} from "@paperclipai/db";
+import { readAgentsSkillSyncPreference } from "@paperclipai/adapter-utils/server-utils";
+import { claudeConfigDir, parseClaudeStreamJson } from "@paperclipai/adapter-claude-local/server";
+import { codexHomeDir, parseCodexJsonl } from "@paperclipai/adapter-codex-local/server";
+import { parseOpenCodeJsonl } from "@paperclipai/adapter-opencode-local/server";
 import {
   DEFAULT_FEEDBACK_DATA_SHARING_PREFERENCE,
   DEFAULT_FEEDBACK_DATA_SHARING_TERMS_VERSION,
@@ -34,7 +34,7 @@ import {
   type FeedbackTraceStatus,
   type FeedbackTraceTargetSummary,
   type FeedbackVoteValue,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { resolveHomeAwarePath, resolveAgentsInstanceRoot } from "../home-paths.js";
 import { notFound, unprocessable } from "../errors.js";
 import { agentInstructionsService } from "./agent-instructions.js";

@@ -4,7 +4,7 @@ import type {
   IssueGraphLivenessAutoRecoveryPreview,
   PatchInstanceGeneralSettings,
   PatchInstanceExperimentalSettings,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { api } from "./client";
 
 export const instanceSettingsApi = {

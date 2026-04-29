@@ -10,7 +10,7 @@ import {
   ensurePostgresDatabase,
   formatEmbeddedPostgresError,
   routines,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import { eq, inArray } from "drizzle-orm";
 import { loadAgentsEnvFile } from "../config/env.js";
 import { readConfig, resolveConfigPath } from "../config/store.js";

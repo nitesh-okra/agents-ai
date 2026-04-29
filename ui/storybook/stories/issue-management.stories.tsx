@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import type { Issue } from "@Agentsai/shared";
+import type { Issue } from "@paperclipai/shared";
 import { useQueryClient } from "@tanstack/react-query";
 import {
   ArrowDownAZ,
@@ -46,7 +46,7 @@ import {
   storybookIssueRuns,
   storybookIssues,
   storybookProjects,
-} from "../fixtures/AgentsData";
+} from "../fixtures/paperclipData";
 
 const companyId = "company-storybook";
 const issueListViewKey = "storybook:issue-management:list";

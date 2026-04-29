@@ -4,7 +4,7 @@ import { execFile as execFileCallback } from "node:child_process";
 import { promisify } from "node:util";
 import { randomUUID } from "node:crypto";
 import { and, asc, desc, eq, getTableColumns, gt, inArray, isNull, lte, notInArray, or, sql } from "drizzle-orm";
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import {
   AGENT_DEFAULT_MAX_CONCURRENT_RUNS,
   ISSUE_CONTINUATION_SUMMARY_DOCUMENT_KEY,
@@ -14,7 +14,7 @@ import {
   type ExecutionWorkspace,
   type ExecutionWorkspaceConfig,
   type RunLivenessState,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import {
   agents,
   agentRuntimeState,
@@ -33,7 +33,7 @@ import {
   projects,
   projectWorkspaces,
   workspaceOperations,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import { conflict, HttpError, notFound } from "../errors.js";
 import { logger } from "../middleware/logger.js";
 import { publishLiveEvent } from "./live-events.js";
@@ -43,7 +43,7 @@ import type { AdapterExecutionResult, AdapterInvocationMeta, AdapterSessionCodec
 import { createLocalAgentJwt } from "../agent-auth-jwt.js";
 import { parseObject, asBoolean, asNumber, appendWithByteCap, MAX_EXCERPT_BYTES } from "../adapters/utils.js";
 import { costService } from "./costs.js";
-import { trackAgentFirstHeartbeat } from "@Agentsai/shared/telemetry";
+import { trackAgentFirstHeartbeat } from "@paperclipai/shared/telemetry";
 import { getTelemetryClient } from "../telemetry.js";
 import { companySkillService } from "./company-skills.js";
 import { budgetService, type BudgetEnforcementScope } from "./budgets.js";
@@ -117,12 +117,12 @@ import {
   hasSessionCompactionThresholds,
   resolveSessionCompactionPolicy,
   type SessionCompactionPolicy,
-} from "@Agentsai/adapter-utils";
+} from "@paperclipai/adapter-utils";
 import {
   readAgentsSkillSyncPreference,
   writeAgentsSkillSyncPreference,
-} from "@Agentsai/adapter-utils/server-utils";
-import { extractSkillMentionIds } from "@Agentsai/shared";
+} from "@paperclipai/adapter-utils/server-utils";
+import { extractSkillMentionIds } from "@paperclipai/shared";
 import { environmentService } from "./environments.js";
 import { environmentRuntimeService } from "./environment-runtime.js";
 import { environmentRunOrchestrator } from "./environment-run-orchestrator.js";

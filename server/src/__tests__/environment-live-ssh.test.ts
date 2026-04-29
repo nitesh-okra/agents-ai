@@ -9,7 +9,7 @@ import {
   startSshEnvLabFixture,
   stopSshEnvLabFixture,
   type SshConnectionConfig,
-} from "@Agentsai/adapter-utils/ssh";
+} from "@paperclipai/adapter-utils/ssh";
 
 async function readOptionalSecret(
   value: string | undefined,

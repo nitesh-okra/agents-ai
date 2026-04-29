@@ -8,8 +8,8 @@ import {
   assertWorkspaceRealizationLifecycle,
   assertExecutionLifecycle,
   assertEnvironmentError,
-} from "@Agentsai/plugin-sdk/testing";
-import type { AgentsPluginManifestV1 } from "@Agentsai/shared";
+} from "@paperclipai/plugin-sdk/testing";
+import type { AgentsPluginManifestV1 } from "@paperclipai/shared";
 
 const FAKE_MANIFEST: AgentsPluginManifestV1 = {
   id: "test-env-plugin",

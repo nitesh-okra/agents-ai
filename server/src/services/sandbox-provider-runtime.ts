@@ -5,7 +5,7 @@ import type {
   FakeSandboxEnvironmentConfig,
   SandboxEnvironmentConfig,
   SandboxEnvironmentProvider,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 
 export interface SandboxProviderValidationResult {
   ok: boolean;

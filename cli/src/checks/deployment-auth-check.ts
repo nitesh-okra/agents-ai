@@ -1,4 +1,4 @@
-import { inferBindModeFromHost } from "@Agentsai/shared";
+import { inferBindModeFromHost } from "@paperclipai/shared";
 import type { AgentsConfig } from "../config/schema.js";
 import type { CheckResult } from "./index.js";
 

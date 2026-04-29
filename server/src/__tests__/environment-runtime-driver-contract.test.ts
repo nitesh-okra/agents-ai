@@ -11,7 +11,7 @@ import {
   startSshEnvLabFixture,
   stopSshEnvLabFixture,
   type SshEnvironmentConfig,
-} from "@Agentsai/adapter-utils/ssh";
+} from "@paperclipai/adapter-utils/ssh";
 import {
   agents,
   companies,
@@ -21,8 +21,8 @@ import {
   environmentLeases,
   environments,
   heartbeatRuns,
-} from "@Agentsai/db";
-import type { Environment } from "@Agentsai/shared";
+} from "@paperclipai/db";
+import type { Environment } from "@paperclipai/shared";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

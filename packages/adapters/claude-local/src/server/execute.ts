@@ -1,8 +1,8 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import type { AdapterExecutionContext, AdapterExecutionResult } from "@Agentsai/adapter-utils";
-import type { RunProcessResult } from "@Agentsai/adapter-utils/server-utils";
+import type { AdapterExecutionContext, AdapterExecutionResult } from "@paperclipai/adapter-utils";
+import type { RunProcessResult } from "@paperclipai/adapter-utils/server-utils";
 import {
   adapterExecutionTargetIsRemote,
   adapterExecutionTargetAgentsApiUrl,
@@ -16,7 +16,7 @@ import {
   readAdapterExecutionTarget,
   resolveAdapterExecutionTargetCommandForLogs,
   runAdapterExecutionTargetProcess,
-} from "@Agentsai/adapter-utils/execution-target";
+} from "@paperclipai/adapter-utils/execution-target";
 import {
   asString,
   asNumber,
@@ -35,7 +35,7 @@ import {
   renderAgentsWakePrompt,
   stringifyAgentsWakePayload,
   DEFAULT_Agents_AGENT_PROMPT_TEMPLATE,
-} from "@Agentsai/adapter-utils/server-utils";
+} from "@paperclipai/adapter-utils/server-utils";
 import {
   parseClaudeStreamJson,
   describeClaudeFailure,

@@ -9,12 +9,12 @@ import {
   heartbeatRuns,
   issueComments,
   issues,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,
 } from "./helpers/embedded-postgres.js";
-import { MAX_ISSUE_REQUEST_DEPTH } from "@Agentsai/shared";
+import { MAX_ISSUE_REQUEST_DEPTH } from "@paperclipai/shared";
 import {
   DEFAULT_PRODUCTIVITY_REVIEW_NO_COMMENT_STREAK_RUNS,
   PRODUCTIVITY_REVIEW_ORIGIN_KIND,

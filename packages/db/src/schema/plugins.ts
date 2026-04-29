@@ -8,7 +8,7 @@ import {
   index,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
-import type { PluginCategory, PluginStatus, AgentsPluginManifestV1 } from "@Agentsai/shared";
+import type { PluginCategory, PluginStatus, AgentsPluginManifestV1 } from "@paperclipai/shared";
 
 /**
  * `plugins` table — stores one row per installed plugin.

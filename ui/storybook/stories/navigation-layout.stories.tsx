@@ -39,7 +39,7 @@ import {
   storybookIssues,
   storybookProjects,
   storybookSidebarBadges,
-} from "../fixtures/AgentsData";
+} from "../fixtures/paperclipData";
 
 function Section({
   eyebrow,

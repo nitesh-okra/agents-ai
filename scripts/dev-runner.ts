@@ -421,14 +421,14 @@ async function runPnpm(args: string[], options: {
 
 async function getMigrationStatusPayload() {
   const status = await runPnpm(
-    ["--filter", "@Agentsai/db", "exec", "tsx", "src/migration-status.ts", "--json"],
+    ["--filter", "@paperclipai/db", "exec", "tsx", "src/migration-status.ts", "--json"],
     { env },
   );
   if (status.code !== 0) {
     process.stderr.write(
       status.stderr ||
         status.stdout ||
-        `[Agents] Command failed with code ${status.code}: pnpm --filter @Agentsai/db exec tsx src/migration-status.ts --json\n`,
+        `[Agents] Command failed with code ${status.code}: pnpm --filter @paperclipai/db exec tsx src/migration-status.ts --json\n`,
     );
     process.exit(status.code);
   }
@@ -516,7 +516,7 @@ async function maybePreflightMigrations(options: { interactive?: boolean; autoAp
 async function buildPluginSdk() {
   console.log("[Agents] building plugin sdk...");
   const result = await runPnpm(
-    ["--filter", "@Agentsai/plugin-sdk", "build"],
+    ["--filter", "@paperclipai/plugin-sdk", "build"],
     { stdio: "inherit" },
   );
   if (result.signal) {
@@ -596,7 +596,7 @@ async function startServerChild() {
   const serverScript = mode === "watch" ? "dev:watch" : "dev";
   child = spawn(
     pnpmBin,
-    ["--filter", "@Agentsai/server", serverScript, ...forwardedArgs],
+    ["--filter", "@paperclipai/server", serverScript, ...forwardedArgs],
     { stdio: "inherit", env, shell: process.platform === "win32" },
   );
 

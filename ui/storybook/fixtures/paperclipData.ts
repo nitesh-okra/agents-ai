@@ -14,7 +14,7 @@ import type {
   Project,
   SidebarBadges,
   WorkspaceRuntimeService,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import type { RunForIssue } from "@/api/activity";
 import type { LiveRunForIssue } from "@/api/heartbeats";
 
@@ -351,7 +351,7 @@ const storybookWorkspaceRuntime = {
       id: "typecheck-ui",
       name: "UI typecheck",
       kind: "job",
-      command: "pnpm --filter @Agentsai/ui typecheck",
+      command: "pnpm --filter @paperclipai/ui typecheck",
       cwd: ".",
     },
   ],
@@ -957,7 +957,7 @@ export const storybookContinuationHandoff: IssueDocument = {
     "",
     "Next action: run the Storybook build, inspect the issue management story, then request QA visual review if the build passes.",
     "",
-    "Important files: `ui/storybook/stories/issue-management.stories.tsx` and `ui/storybook/fixtures/AgentsData.ts`.",
+    "Important files: `ui/storybook/stories/issue-management.stories.tsx` and `ui/storybook/fixtures/paperclipData.ts`.",
   ].join("\n"),
   latestRevisionId: "revision-continuation-1",
   latestRevisionNumber: 1,

@@ -29,4 +29,4 @@ export type {
   ConfigFieldSchema,
   AdapterConfigSchema,
   ServerAdapterModule,
-} from "@Agentsai/adapter-utils";
+} from "@paperclipai/adapter-utils";

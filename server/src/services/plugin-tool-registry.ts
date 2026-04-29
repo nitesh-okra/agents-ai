@@ -22,8 +22,8 @@
 import type {
   AgentsPluginManifestV1,
   PluginToolDeclaration,
-} from "@Agentsai/shared";
-import type { ToolRunContext, ToolResult, ExecuteToolParams } from "@Agentsai/plugin-sdk";
+} from "@paperclipai/shared";
+import type { ToolRunContext, ToolResult, ExecuteToolParams } from "@paperclipai/plugin-sdk";
 import type { PluginWorkerManager } from "./plugin-worker-manager.js";
 import { logger } from "../middleware/logger.js";
 

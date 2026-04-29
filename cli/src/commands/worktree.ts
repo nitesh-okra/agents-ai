@@ -45,7 +45,7 @@ import {
   runDatabaseRestore,
   createEmbeddedPostgresLogBuffer,
   formatEmbeddedPostgresError,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import type { Command } from "commander";
 import { ensureAgentJwtSecret, loadAgentsEnvFile, mergeAgentsEnvEntries, readAgentsEnvEntries, resolveAgentsEnvFile } from "../config/env.js";
 import { expandHomePrefix } from "../config/home.js";

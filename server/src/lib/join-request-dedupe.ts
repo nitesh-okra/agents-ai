@@ -1,4 +1,4 @@
-import { joinRequests } from "@Agentsai/db";
+import { joinRequests } from "@paperclipai/db";
 
 type JoinRequestLike = Pick<
   typeof joinRequests.$inferSelect,

@@ -1,6 +1,6 @@
 import crypto from "node:crypto";
 import { and, asc, desc, eq, inArray, isNotNull, isNull, lte, ne, or, sql } from "drizzle-orm";
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import {
   agents,
   companySecrets,
@@ -14,7 +14,7 @@ import {
   routineRuns,
   routines,
   routineTriggers,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import type {
   CreateRoutine,
   CreateRoutineTrigger,
@@ -28,7 +28,7 @@ import type {
   RunRoutine,
   UpdateRoutine,
   UpdateRoutineTrigger,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import {
   WORKSPACE_BRANCH_ROUTINE_VARIABLE,
   getBuiltinRoutineVariableValues,
@@ -36,8 +36,8 @@ import {
   interpolateRoutineTemplate,
   stringifyRoutineVariableValue,
   syncRoutineVariablesWithTemplate,
-} from "@Agentsai/shared";
-import { trackRoutineRun } from "@Agentsai/shared/telemetry";
+} from "@paperclipai/shared";
+import { trackRoutineRun } from "@paperclipai/shared/telemetry";
 import { conflict, forbidden, notFound, unauthorized, unprocessable } from "../errors.js";
 import { logger } from "../middleware/logger.js";
 import { getTelemetryClient } from "../telemetry.js";

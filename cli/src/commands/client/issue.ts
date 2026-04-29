@@ -8,7 +8,7 @@ import {
   updateIssueSchema,
   type Issue,
   type IssueComment,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import {
   addCommonClientOptions,
   formatInlineRecord,

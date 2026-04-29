@@ -1,4 +1,4 @@
-import type { CompanyPortabilityFileEntry } from "@Agentsai/shared";
+import type { CompanyPortabilityFileEntry } from "@paperclipai/shared";
 
 const textEncoder = new TextEncoder();
 const textDecoder = new TextDecoder();

@@ -17,7 +17,7 @@ import type {
   PluginRecord,
   PluginConfig,
   PluginStatus,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { api } from "./client";
 
 /**

@@ -1,5 +1,5 @@
 import fs from "node:fs";
-import { AgentsConfigSchema, type AgentsConfig } from "@Agentsai/shared";
+import { AgentsConfigSchema, type AgentsConfig } from "@paperclipai/shared";
 import { resolveAgentsConfigPath } from "./paths.js";
 
 export function readConfigFile(): AgentsConfig | null {

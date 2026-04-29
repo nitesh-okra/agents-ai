@@ -1,12 +1,12 @@
 import { Router, type Request } from "express";
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import {
   AGENT_ADAPTER_TYPES,
   createEnvironmentSchema,
   getEnvironmentCapabilities,
   probeEnvironmentConfigSchema,
   updateEnvironmentSchema,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { forbidden } from "../errors.js";
 import { validate } from "../middleware/validate.js";
 import {

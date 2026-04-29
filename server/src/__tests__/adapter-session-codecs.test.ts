@@ -1,18 +1,18 @@
 import { describe, expect, it } from "vitest";
-import { sessionCodec as claudeSessionCodec } from "@Agentsai/adapter-claude-local/server";
-import { sessionCodec as codexSessionCodec, isCodexUnknownSessionError } from "@Agentsai/adapter-codex-local/server";
+import { sessionCodec as claudeSessionCodec } from "@paperclipai/adapter-claude-local/server";
+import { sessionCodec as codexSessionCodec, isCodexUnknownSessionError } from "@paperclipai/adapter-codex-local/server";
 import {
   sessionCodec as cursorSessionCodec,
   isCursorUnknownSessionError,
-} from "@Agentsai/adapter-cursor-local/server";
+} from "@paperclipai/adapter-cursor-local/server";
 import {
   sessionCodec as geminiSessionCodec,
   isGeminiUnknownSessionError,
-} from "@Agentsai/adapter-gemini-local/server";
+} from "@paperclipai/adapter-gemini-local/server";
 import {
   sessionCodec as opencodeSessionCodec,
   isOpenCodeUnknownSessionError,
-} from "@Agentsai/adapter-opencode-local/server";
+} from "@paperclipai/adapter-opencode-local/server";
 
 describe("adapter session codecs", () => {
   it("normalizes claude session params with cwd", () => {

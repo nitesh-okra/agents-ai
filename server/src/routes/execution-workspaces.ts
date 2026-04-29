@@ -1,14 +1,14 @@
 import { and, eq } from "drizzle-orm";
 import { Router, type Request, type Response } from "express";
-import type { Db } from "@Agentsai/db";
-import { issues, projects, projectWorkspaces } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
+import { issues, projects, projectWorkspaces } from "@paperclipai/db";
 import {
   findWorkspaceCommandDefinition,
   matchWorkspaceRuntimeServiceToCommand,
   updateExecutionWorkspaceSchema,
   workspaceRuntimeControlTargetSchema,
-} from "@Agentsai/shared";
-import type { WorkspaceRuntimeDesiredState, WorkspaceRuntimeServiceStateMap } from "@Agentsai/shared";
+} from "@paperclipai/shared";
+import type { WorkspaceRuntimeDesiredState, WorkspaceRuntimeServiceStateMap } from "@paperclipai/shared";
 import { validate } from "../middleware/validate.js";
 import { executionWorkspaceService, logActivity, workspaceOperationService } from "../services/index.js";
 import { mergeExecutionWorkspaceConfig, readExecutionWorkspaceConfig } from "../services/execution-workspaces.js";

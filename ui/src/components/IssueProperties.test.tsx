@@ -10,9 +10,9 @@ import type {
   IssueLabel,
   Project,
   WorkspaceRuntimeService,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import type { Issue } from "@Agentsai/shared";
+import type { Issue } from "@paperclipai/shared";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { IssueProperties } from "./IssueProperties";
 

@@ -31,9 +31,9 @@ const {
   syncDirectoryToSsh: vi.fn(async () => undefined),
 }));
 
-vi.mock("@Agentsai/adapter-utils/server-utils", async () => {
-  const actual = await vi.importActual<typeof import("@Agentsai/adapter-utils/server-utils")>(
-    "@Agentsai/adapter-utils/server-utils",
+vi.mock("@paperclipai/adapter-utils/server-utils", async () => {
+  const actual = await vi.importActual<typeof import("@paperclipai/adapter-utils/server-utils")>(
+    "@paperclipai/adapter-utils/server-utils",
   );
   return {
     ...actual,
@@ -43,9 +43,9 @@ vi.mock("@Agentsai/adapter-utils/server-utils", async () => {
   };
 });
 
-vi.mock("@Agentsai/adapter-utils/ssh", async () => {
-  const actual = await vi.importActual<typeof import("@Agentsai/adapter-utils/ssh")>(
-    "@Agentsai/adapter-utils/ssh",
+vi.mock("@paperclipai/adapter-utils/ssh", async () => {
+  const actual = await vi.importActual<typeof import("@paperclipai/adapter-utils/ssh")>(
+    "@paperclipai/adapter-utils/ssh",
   );
   return {
     ...actual,

@@ -1,4 +1,4 @@
-import type { Agent } from "@Agentsai/shared";
+import type { Agent } from "@paperclipai/shared";
 
 export interface AgentConfigOverlay {
   identity: Record<string, unknown>;

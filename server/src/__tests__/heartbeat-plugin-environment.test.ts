@@ -11,7 +11,7 @@ import {
   plugins,
   projects,
   projectWorkspaces,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import type { HeartbeatRun, Issue } from "@Agentsai/shared";
+import type { HeartbeatRun, Issue } from "@paperclipai/shared";
 import { useQueryClient } from "@tanstack/react-query";
 import {
   Archive,
@@ -50,7 +50,7 @@ import {
   storybookAgents,
   storybookIssues,
   storybookLiveRuns,
-} from "../fixtures/AgentsData";
+} from "../fixtures/paperclipData";
 
 const companyId = "company-storybook";
 const primaryIssueId = "issue-storybook-1";

@@ -8,7 +8,7 @@ import {
   instanceUserRoles,
   issues,
   principalPermissionGrants,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

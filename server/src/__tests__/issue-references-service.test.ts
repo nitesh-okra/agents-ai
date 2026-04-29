@@ -9,7 +9,7 @@ import {
   issueDocuments,
   issueReferenceMentions,
   issues,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

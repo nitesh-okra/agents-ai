@@ -12,8 +12,8 @@ import {
   pluginDatabaseNamespaces,
   pluginMigrations,
   plugins,
-} from "@Agentsai/db";
-import type { AgentsPluginManifestV1 } from "@Agentsai/shared";
+} from "@paperclipai/db";
+import type { AgentsPluginManifestV1 } from "@paperclipai/shared";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

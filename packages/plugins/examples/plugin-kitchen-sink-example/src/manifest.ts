@@ -1,4 +1,4 @@
-import type { AgentsPluginManifestV1 } from "@Agentsai/plugin-sdk";
+import type { AgentsPluginManifestV1 } from "@paperclipai/plugin-sdk";
 import {
   DEFAULT_CONFIG,
   EXPORT_NAMES,

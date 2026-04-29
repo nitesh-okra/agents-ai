@@ -16,7 +16,7 @@ import {
   projectWorkspaces,
   projects,
   workspaceRuntimeServices,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import { eq } from "drizzle-orm";
 import {
   buildWorkspaceRuntimeDesiredStatePatch,
@@ -39,7 +39,7 @@ import {
 } from "../services/workspace-runtime.ts";
 import { writeLocalServiceRegistryRecord } from "../services/local-service-supervisor.ts";
 import { resolveAgentsConfigPath } from "../paths.ts";
-import type { WorkspaceOperation } from "@Agentsai/shared";
+import type { WorkspaceOperation } from "@paperclipai/shared";
 import type { WorkspaceOperationRecorder } from "../services/workspace-operations.ts";
 import {
   getEmbeddedPostgresTestSupport,
@@ -210,21 +210,21 @@ describe("ensureServerWorkspaceLinksCurrent", () => {
     await fs.writeFile(
       path.join(repoRoot, "server", "package.json"),
       JSON.stringify({
-        name: "@Agentsai/server",
+        name: "@paperclipai/server",
         dependencies: {
-          "@Agentsai/db": "workspace:*",
+          "@paperclipai/db": "workspace:*",
         },
       }),
       "utf8",
     );
     await fs.writeFile(
       path.join(expectedPackageDir, "package.json"),
-      JSON.stringify({ name: "@Agentsai/db" }),
+      JSON.stringify({ name: "@paperclipai/db" }),
       "utf8",
     );
     await fs.writeFile(
       path.join(stalePackageDir, "package.json"),
-      JSON.stringify({ name: "@Agentsai/db" }),
+      JSON.stringify({ name: "@paperclipai/db" }),
       "utf8",
     );
     await fs.symlink(stalePackageDir, path.join(serverNodeModulesScopeDir, "db"));
@@ -246,16 +246,16 @@ describe("ensureServerWorkspaceLinksCurrent", () => {
     await fs.writeFile(
       path.join(repoRoot, "server", "package.json"),
       JSON.stringify({
-        name: "@Agentsai/server",
+        name: "@paperclipai/server",
         dependencies: {
-          "@Agentsai/db": "workspace:*",
+          "@paperclipai/db": "workspace:*",
         },
       }),
       "utf8",
     );
     await fs.writeFile(
       path.join(expectedPackageDir, "package.json"),
-      JSON.stringify({ name: "@Agentsai/db" }),
+      JSON.stringify({ name: "@paperclipai/db" }),
       "utf8",
     );
     await fs.symlink(expectedPackageDir, path.join(serverNodeModulesScopeDir, "db"));
@@ -279,21 +279,21 @@ describe("ensureServerWorkspaceLinksCurrent", () => {
     await fs.writeFile(
       path.join(repoRoot, "server", "package.json"),
       JSON.stringify({
-        name: "@Agentsai/server",
+        name: "@paperclipai/server",
         dependencies: {
-          "@Agentsai/db": "workspace:*",
+          "@paperclipai/db": "workspace:*",
         },
       }),
       "utf8",
     );
     await fs.writeFile(
       path.join(expectedPackageDir, "package.json"),
-      JSON.stringify({ name: "@Agentsai/db" }),
+      JSON.stringify({ name: "@paperclipai/db" }),
       "utf8",
     );
     await fs.writeFile(
       path.join(stalePackageDir, "package.json"),
-      JSON.stringify({ name: "@Agentsai/db" }),
+      JSON.stringify({ name: "@paperclipai/db" }),
       "utf8",
     );
     await fs.symlink(stalePackageDir, path.join(serverNodeModulesScopeDir, "db"));

@@ -1,4 +1,4 @@
-import type { AgentsPluginManifestV1 } from "@Agentsai/plugin-sdk";
+import type { AgentsPluginManifestV1 } from "@paperclipai/plugin-sdk";
 
 const PLUGIN_ID = "Agents.fake-sandbox-provider";
 const PLUGIN_VERSION = "0.1.0";

@@ -3,7 +3,7 @@ import type {
   HeartbeatRunEvent,
   InstanceSchedulerHeartbeatAgent,
   WorkspaceOperation,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { api } from "./client";
 
 export interface RunLivenessFields {

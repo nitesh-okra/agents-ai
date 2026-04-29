@@ -1,6 +1,6 @@
 import { and, desc, eq, sql } from "drizzle-orm";
-import type { Db } from "@Agentsai/db";
-import { environmentLeases, environments } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
+import { environmentLeases, environments } from "@paperclipai/db";
 import {
   ENVIRONMENT_DRIVERS,
   ENVIRONMENT_LEASE_CLEANUP_STATUSES,
@@ -14,7 +14,7 @@ import {
   type EnvironmentLeasePolicy,
   type EnvironmentLeaseStatus,
   type UpdateEnvironment,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 
 type EnvironmentRow = typeof environments.$inferSelect;
 type EnvironmentLeaseRow = typeof environmentLeases.$inferSelect;

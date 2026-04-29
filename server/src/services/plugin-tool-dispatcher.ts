@@ -22,12 +22,12 @@
  * @see PLUGIN_SPEC.md §13.10 — `executeTool`
  */
 
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import type {
   AgentsPluginManifestV1,
   PluginRecord,
-} from "@Agentsai/shared";
-import type { ToolRunContext, ToolResult } from "@Agentsai/plugin-sdk";
+} from "@paperclipai/shared";
+import type { ToolRunContext, ToolResult } from "@paperclipai/plugin-sdk";
 import type { PluginWorkerManager } from "./plugin-worker-manager.js";
 import type { PluginLifecycleManager } from "./plugin-lifecycle.js";
 import {

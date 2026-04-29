@@ -1,4 +1,4 @@
-import type { ActivityEvent } from "@Agentsai/shared";
+import type { ActivityEvent } from "@paperclipai/shared";
 
 export interface IssueTimelineAssignee {
   agentId: string | null;

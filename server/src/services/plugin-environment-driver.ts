@@ -1,16 +1,16 @@
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import type {
   EnvironmentProbeResult,
   PluginEnvironmentConfig,
   PluginEnvironmentDriverDeclaration,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import type {
   PluginEnvironmentExecuteParams,
   PluginEnvironmentExecuteResult,
   PluginEnvironmentLease,
   PluginEnvironmentRealizeWorkspaceParams,
   PluginEnvironmentRealizeWorkspaceResult,
-} from "@Agentsai/plugin-sdk";
+} from "@paperclipai/plugin-sdk";
 import { unprocessable } from "../errors.js";
 import { pluginRegistryService } from "./plugin-registry.js";
 import type { PluginWorkerManager } from "./plugin-worker-manager.js";

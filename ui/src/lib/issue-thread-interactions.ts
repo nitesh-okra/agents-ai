@@ -20,7 +20,7 @@ export type {
   SuggestTasksPayload,
   SuggestTasksResult,
   SuggestTasksResultCreatedTask,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import type {
   AskUserQuestionsAnswer,
   AskUserQuestionsInteraction,
@@ -30,7 +30,7 @@ import type {
   SuggestedTaskDraft,
   SuggestTasksInteraction,
   SuggestTasksResultCreatedTask,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 
 export interface SuggestedTaskTreeNode {
   task: SuggestedTaskDraft;

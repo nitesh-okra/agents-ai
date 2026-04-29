@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   assertEnvironmentEventOrder,
   createEnvironmentTestHarness,
-} from "@Agentsai/plugin-sdk/testing";
+} from "@paperclipai/plugin-sdk/testing";
 import manifest from "./manifest.js";
 import plugin from "./plugin.js";
 

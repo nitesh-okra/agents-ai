@@ -21,7 +21,7 @@ import {
   routineRuns,
   routines,
   routineTriggers,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,
@@ -119,7 +119,7 @@ describeEmbeddedPostgres("routine routes end-to-end", () => {
 
   beforeEach(() => {
     vi.resetModules();
-    vi.doUnmock("@Agentsai/shared/telemetry");
+    vi.doUnmock("@paperclipai/shared/telemetry");
     vi.doUnmock("../telemetry.js");
     vi.doUnmock("../services/access.js");
     vi.doUnmock("../services/issues.js");

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   updateCompanyMemberWithPermissionsSchema,
   updateCurrentUserProfileSchema,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 
 describe("access validators", () => {
   it("accepts HTTP(S) and Agents asset image URLs", () => {

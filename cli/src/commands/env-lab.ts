@@ -8,7 +8,7 @@ import {
   readSshEnvLabFixtureStatus,
   startSshEnvLabFixture,
   stopSshEnvLabFixture,
-} from "@Agentsai/adapter-utils/ssh";
+} from "@paperclipai/adapter-utils/ssh";
 import { resolveAgentsInstanceId, resolveAgentsInstanceRoot } from "../config/home.js";
 
 export function resolveEnvLabSshStatePath(instanceId?: string): string {

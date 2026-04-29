@@ -1,5 +1,5 @@
 import { Router, type Request } from "express";
-import type { Db } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
 import {
   DEFAULT_FEEDBACK_DATA_SHARING_TERMS_VERSION,
   companyPortabilityExportSchema,
@@ -11,7 +11,7 @@ import {
   feedbackVoteValueSchema,
   updateCompanyBrandingSchema,
   updateCompanySchema,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { badRequest, forbidden } from "../errors.js";
 import { validate } from "../middleware/validate.js";
 import {

@@ -1,5 +1,5 @@
-import { PERMISSION_KEYS } from "@Agentsai/shared";
-import type { HumanCompanyMembershipRole } from "@Agentsai/shared";
+import { PERMISSION_KEYS } from "@paperclipai/shared";
+import type { HumanCompanyMembershipRole } from "@paperclipai/shared";
 
 const HUMAN_COMPANY_MEMBERSHIP_ROLES: HumanCompanyMembershipRole[] = [
   "owner",

@@ -10,7 +10,7 @@ import {
   getSshEnvLabSupport,
   startSshEnvLabFixture,
   stopSshEnvLabFixture,
-} from "@Agentsai/adapter-utils/ssh";
+} from "@paperclipai/adapter-utils/ssh";
 import {
   agents,
   companies,
@@ -21,7 +21,7 @@ import {
   environments,
   heartbeatRuns,
   plugins,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,
@@ -448,7 +448,7 @@ describeEmbeddedPostgres("environmentRuntimeService", () => {
     await db.insert(plugins).values({
       id: pluginId,
       pluginKey: "Agents.fake-plugin-sandbox-provider",
-      packageName: "@Agentsai/plugin-fake-sandbox",
+      packageName: "@paperclipai/plugin-fake-sandbox",
       version: "1.0.0",
       apiVersion: 1,
       categories: ["automation"],

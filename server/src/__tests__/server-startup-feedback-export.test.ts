@@ -93,7 +93,7 @@ vi.mock("detect-port", () => ({
   default: detectPortMock,
 }));
 
-vi.mock("@Agentsai/db", () => ({
+vi.mock("@paperclipai/db", () => ({
   createDb: createDbMock,
   ensurePostgresDatabase: vi.fn(),
   getPostgresDataDirectory: vi.fn(),

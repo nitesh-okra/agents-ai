@@ -13,7 +13,7 @@ import {
   environments,
   heartbeatRunEvents,
   heartbeatRuns,
-} from "@Agentsai/db";
+} from "@paperclipai/db";
 import {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,

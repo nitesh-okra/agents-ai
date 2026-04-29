@@ -1,6 +1,6 @@
 import path from "node:path";
 import { CommandExitError, Sandbox, SandboxNotFoundError, TimeoutError } from "e2b";
-import { definePlugin } from "@Agentsai/plugin-sdk";
+import { definePlugin } from "@paperclipai/plugin-sdk";
 import type {
   PluginEnvironmentAcquireLeaseParams,
   PluginEnvironmentDestroyLeaseParams,
@@ -15,7 +15,7 @@ import type {
   PluginEnvironmentResumeLeaseParams,
   PluginEnvironmentValidateConfigParams,
   PluginEnvironmentValidationResult,
-} from "@Agentsai/plugin-sdk";
+} from "@paperclipai/plugin-sdk";
 
 interface E2bDriverConfig {
   template: string;

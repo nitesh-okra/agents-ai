@@ -5,7 +5,7 @@ import type {
   ExecutionWorkspaceCloseReadiness,
   Goal,
   IssueAttachment,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { useQueryClient } from "@tanstack/react-query";
 import { Badge } from "@/components/ui/badge";
 import { DocumentDiffModal } from "@/components/DocumentDiffModal";
@@ -28,7 +28,7 @@ import {
   storybookIssueLabels,
   storybookIssues,
   storybookProjects,
-} from "../fixtures/AgentsData";
+} from "../fixtures/paperclipData";
 
 const COMPANY_ID = "company-storybook";
 const SELECTED_COMPANY_STORAGE_KEY = "Agents.selectedCompanyId";

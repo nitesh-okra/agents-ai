@@ -18,7 +18,7 @@ import {
   storybookEntityNameMap,
   storybookEntityTitleMap,
   storybookIssues,
-} from "../fixtures/AgentsData";
+} from "../fixtures/paperclipData";
 
 function Section({
   eyebrow,

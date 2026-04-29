@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from "node:fs";
 import { resolveAgentsConfigPath, resolveAgentsEnvPath } from "./paths.js";
-import type { BindMode, DeploymentExposure, DeploymentMode } from "@Agentsai/shared";
+import type { BindMode, DeploymentExposure, DeploymentMode } from "@paperclipai/shared";
 
 import { parse as parseEnvFileContents } from "dotenv";
 

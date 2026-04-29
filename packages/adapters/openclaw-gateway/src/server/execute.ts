@@ -2,7 +2,7 @@ import type {
   AdapterExecutionContext,
   AdapterExecutionResult,
   AdapterRuntimeServiceReport,
-} from "@Agentsai/adapter-utils";
+} from "@paperclipai/adapter-utils";
 import {
   asNumber,
   asString,
@@ -10,7 +10,7 @@ import {
   parseObject,
   renderAgentsWakePrompt,
   stringifyAgentsWakePayload,
-} from "@Agentsai/adapter-utils/server-utils";
+} from "@paperclipai/adapter-utils/server-utils";
 import crypto, { randomUUID } from "node:crypto";
 import { WebSocket } from "ws";
 

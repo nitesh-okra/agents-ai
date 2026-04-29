@@ -1,7 +1,7 @@
 // @vitest-environment node
 
 import { describe, expect, it } from "vitest";
-import type { Issue } from "@Agentsai/shared";
+import type { Issue } from "@paperclipai/shared";
 import {
   buildSubIssueProgressSummary,
   shouldRenderRichSubIssuesSection,

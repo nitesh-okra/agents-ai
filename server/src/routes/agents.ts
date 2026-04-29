@@ -1,8 +1,8 @@
 import { Router, type Request, type Response } from "express";
 import { generateKeyPairSync, randomUUID } from "node:crypto";
 import path from "node:path";
-import type { Db } from "@Agentsai/db";
-import { agents as agentsTable, companies, heartbeatRuns, issues as issuesTable } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
+import { agents as agentsTable, companies, heartbeatRuns, issues as issuesTable } from "@paperclipai/db";
 import { and, desc, eq, inArray, not, sql } from "drizzle-orm";
 import {
   agentSkillSyncSchema,
@@ -24,12 +24,12 @@ import {
   wakeAgentSchema,
   updateAgentSchema,
   supportedEnvironmentDriversForAdapter,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import {
   readAgentsSkillSyncPreference,
   writeAgentsSkillSyncPreference,
-} from "@Agentsai/adapter-utils/server-utils";
-import { trackAgentCreated } from "@Agentsai/shared/telemetry";
+} from "@paperclipai/adapter-utils/server-utils";
+import { trackAgentCreated } from "@paperclipai/shared/telemetry";
 import { validate } from "../middleware/validate.js";
 import {
   agentService,
@@ -67,14 +67,14 @@ import { redactEventPayload } from "../redaction.js";
 import { redactCurrentUserValue } from "../log-redaction.js";
 import { renderOrgChartSvg, renderOrgChartPng, type OrgNode, type OrgChartStyle, ORG_CHART_STYLES } from "./org-chart-svg.js";
 import { instanceSettingsService } from "../services/instance-settings.js";
-import { runClaudeLogin } from "@Agentsai/adapter-claude-local/server";
+import { runClaudeLogin } from "@paperclipai/adapter-claude-local/server";
 import {
   DEFAULT_CODEX_LOCAL_BYPASS_APPROVALS_AND_SANDBOX,
   DEFAULT_CODEX_LOCAL_MODEL,
-} from "@Agentsai/adapter-codex-local";
-import { DEFAULT_CURSOR_LOCAL_MODEL } from "@Agentsai/adapter-cursor-local";
-import { DEFAULT_GEMINI_LOCAL_MODEL } from "@Agentsai/adapter-gemini-local";
-import { ensureOpenCodeModelConfiguredAndAvailable } from "@Agentsai/adapter-opencode-local/server";
+} from "@paperclipai/adapter-codex-local";
+import { DEFAULT_CURSOR_LOCAL_MODEL } from "@paperclipai/adapter-cursor-local";
+import { DEFAULT_GEMINI_LOCAL_MODEL } from "@paperclipai/adapter-gemini-local";
+import { ensureOpenCodeModelConfiguredAndAvailable } from "@paperclipai/adapter-opencode-local/server";
 import {
   loadDefaultAgentInstructionsBundle,
   resolveDefaultAgentInstructionsBundleRole,

@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import type { AgentsConfig } from "@Agentsai/shared";
+import type { AgentsConfig } from "@paperclipai/shared";
 import { resolveAgentsConfigPath, resolveAgentsEnvPath } from "./paths.js";
 
 function nonEmpty(value: string | null | undefined): string | null {

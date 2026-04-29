@@ -8,7 +8,7 @@ import {
   type AgentRuntimeState,
   type CompanySecret,
   type EnvBinding,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { ActiveAgentsPanel } from "@/components/ActiveAgentsPanel";
 import { AgentConfigForm, type CreateConfigValues } from "@/components/AgentConfigForm";
 import { defaultCreateValues } from "@/components/agent-config-defaults";
@@ -37,7 +37,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
-import { storybookAgents, storybookIssues } from "../fixtures/AgentsData";
+import { storybookAgents, storybookIssues } from "../fixtures/paperclipData";
 
 const COMPANY_ID = "company-storybook";
 const now = new Date("2026-04-20T12:00:00.000Z");

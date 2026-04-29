@@ -1,6 +1,6 @@
 import { and, eq, inArray } from "drizzle-orm";
-import type { Db } from "@Agentsai/db";
-import { environmentLeases } from "@Agentsai/db";
+import type { Db } from "@paperclipai/db";
+import { environmentLeases } from "@paperclipai/db";
 import type {
   Environment,
   EnvironmentLease,
@@ -8,13 +8,13 @@ import type {
   ExecutionWorkspace,
   PluginEnvironmentConfig,
   SandboxEnvironmentConfig,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import type {
   PluginEnvironmentExecuteResult,
   PluginEnvironmentLease,
   PluginEnvironmentRealizeWorkspaceResult,
-} from "@Agentsai/plugin-sdk";
-import { ensureSshWorkspaceReady, findReachableAgentsApiUrlOverSsh } from "@Agentsai/adapter-utils/ssh";
+} from "@paperclipai/plugin-sdk";
+import { ensureSshWorkspaceReady, findReachableAgentsApiUrlOverSsh } from "@paperclipai/adapter-utils/ssh";
 import { environmentService } from "./environments.js";
 import {
   parseEnvironmentDriverConfig,

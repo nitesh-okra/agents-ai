@@ -1,4 +1,4 @@
-import type { WorkspaceRuntimeControlTarget } from "@Agentsai/shared";
+import type { WorkspaceRuntimeControlTarget } from "@paperclipai/shared";
 
 export function sanitizeWorkspaceRuntimeControlTarget(
   target: WorkspaceRuntimeControlTarget = {},

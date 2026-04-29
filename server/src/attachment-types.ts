@@ -14,7 +14,7 @@
  *   - Exact types:   "application/pdf"
  *   - Wildcards:     "image/*"  or  "application/vnd.openxmlformats-officedocument.*"
  */
-import { MAX_COMPANY_ATTACHMENT_MAX_BYTES } from "@Agentsai/shared";
+import { MAX_COMPANY_ATTACHMENT_MAX_BYTES } from "@paperclipai/shared";
 
 export const DEFAULT_ALLOWED_TYPES: readonly string[] = [
   "image/png",

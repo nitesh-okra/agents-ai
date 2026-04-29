@@ -4,7 +4,7 @@ import {
   type AuthSession,
   type CurrentUserProfile,
   type UpdateCurrentUserProfile,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 
 type AuthErrorBody =
   | {

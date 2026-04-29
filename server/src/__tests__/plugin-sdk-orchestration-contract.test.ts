@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { describe, expect, it } from "vitest";
-import type { Issue, AgentsPluginManifestV1 } from "@Agentsai/shared";
+import type { Issue, AgentsPluginManifestV1 } from "@paperclipai/shared";
 import { createTestHarness } from "../../../packages/plugins/sdk/src/testing.js";
 
 function manifest(capabilities: AgentsPluginManifestV1["capabilities"]): AgentsPluginManifestV1 {

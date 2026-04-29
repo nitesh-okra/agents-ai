@@ -5,7 +5,7 @@ import type {
   InboxDismissal,
   Issue,
   JoinRequest,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import {
   applyIssueFilters,
   defaultIssueFilterState,

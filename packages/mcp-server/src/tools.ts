@@ -11,7 +11,7 @@ import {
   updateIssueSchema,
   upsertIssueDocumentSchema,
   linkIssueApprovalSchema,
-} from "@Agentsai/shared";
+} from "@paperclipai/shared";
 import { AgentsApiClient } from "./client.js";
 import { formatErrorResponse, formatTextResponse } from "./format.js";
 

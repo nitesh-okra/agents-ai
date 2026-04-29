@@ -1,6 +1,6 @@
 import { useMemo, useState, type ReactNode } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import type { Agent, CompanySecret, EnvBinding, Project, RoutineVariable } from "@Agentsai/shared";
+import type { Agent, CompanySecret, EnvBinding, Project, RoutineVariable } from "@paperclipai/shared";
 import { Code2, FileText, ListPlus, RotateCcw, Table2 } from "lucide-react";
 import { EnvVarEditor } from "@/components/EnvVarEditor";
 import { ExecutionParticipantPicker } from "@/components/ExecutionParticipantPicker";
@@ -20,7 +20,7 @@ import { ScheduleEditor, describeSchedule } from "@/components/ScheduleEditor";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { buildExecutionPolicy } from "@/lib/issue-execution-policy";
-import { createIssue, storybookAgents } from "../fixtures/AgentsData";
+import { createIssue, storybookAgents } from "../fixtures/paperclipData";
 
 function Section({
   eyebrow,
@@ -181,7 +181,7 @@ const validAdapterValues = {
   concurrency: 2,
   dryRun: true,
   notes: "Use the project worktree and post a concise task update before handoff.",
-  allowedCommands: ["pnpm --filter @Agentsai/ui typecheck", "pnpm build-storybook"],
+  allowedCommands: ["pnpm --filter @paperclipai/ui typecheck", "pnpm build-storybook"],
   advanced: { timeoutSeconds: 900, requireApproval: false },
 };
 
